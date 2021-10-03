@@ -1,0 +1,36 @@
+
+
+###
+POST http://localhost:8080/addQueues
+Content-Type: application/json
+
+{
+  "cityName": "armavir",
+  "queue": "armavirQueue2"
+}
+
+###
+GET http://localhost:8080/cityQueues
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/updateQueue
+Content-Type: application/json
+
+{
+  "id": 12,
+  "cityName": "Krasnodar",
+  "queue": "krasnodarQueue1"
+}
+
+###
+
+DELETE http://localhost:8080/deleteQueues
+Content-Type: application/json
+
+{
+  "id": 10,
+  "queue": "armavirQueue2",
+  "cityName": "armavir"
+}

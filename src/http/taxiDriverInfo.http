@@ -1,0 +1,43 @@
+POST http://localhost:8080/addDriver
+Content-Type: application/json
+
+{
+  "lastName": "Ukolov",
+  "firstName": "Alex",
+  "level": "4",
+  "carModel": "Kia K5",
+  "date": "2021-10-03T15:46:29.523+00:00"
+}
+
+###
+GET http://localhost:8080/allDrivers
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/updateDriver
+Content-Type: application/json
+
+{
+  "id": 2,
+  "lastName": "Ivan",
+  "firstName": "Ivanov",
+  "level": "1",
+  "carModel": "Ford Mustang",
+  "date": "2021-10-03T15:46:29.523+00:00"
+}
+
+###
+
+DELETE http://localhost:8080/deleteDriver
+Content-Type: application/json
+
+{
+  "id": 2,
+  "lastName": "Ivan",
+  "firstName": "Ivanov",
+  "level": "1",
+  "carModel": "Ford Mustang",
+  "date": "2021-10-03T15:46:29.523+00:00"
+}
+
